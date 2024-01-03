@@ -7,6 +7,5 @@ export default function getResponseFromAPI(){
       reject('This is rejected promise');
     }
   });
-
-  return p;
+          return p;
 }
