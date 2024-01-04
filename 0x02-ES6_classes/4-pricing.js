@@ -5,7 +5,6 @@ export default class Pricing {
     this._amount = amount;
     this._currency = currency;
   }
-  // eslint-disable-next-line no-unused-vars
 
   get amount() {
     return this._amount;
@@ -28,6 +27,7 @@ export default class Pricing {
   }
 
   static convertPrice(amount, conversionRate) {
+    new Currency('adam', 'string');
     return amount * conversionRate;
   }
 }
