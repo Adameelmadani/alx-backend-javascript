@@ -9,7 +9,7 @@ export default class HolbertonCourse {
     if (!Array.isArray(students)) {
       throw new TypeError('Students must be an array of strings');
     } else {
-      for (student of students) {
+      for (let student of students) {
         if (typeof student !== 'string') {
           throw new TypeError('Students must be an array of strings');
         }
@@ -45,7 +45,7 @@ export default class HolbertonCourse {
     if (!Array.isArray(students)) {
       throw new TypeError('Students must be an array of strings');
     } else {
-      for (student of students) {
+      for (let student of students) {
         if (typeof student !== 'string') {
           throw new TypeError('Students must be an array of strings');
         }
