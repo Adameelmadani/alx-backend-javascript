@@ -1,14 +1,6 @@
 export default function signUpUser(firstName, lastName) {
-  return new Promise((resolve, reject) => {
-    let a = 0;
-    if (a === 0) {
-      resolve({
-        firstName,
-        lastName,
-      });
-    } else {
-      reject();
-    }
-    a = 4;
+  return Promise.resolve({
+    firstName: value,
+    lastName: value,
   });
 }
