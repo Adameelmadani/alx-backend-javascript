@@ -19,4 +19,23 @@ class HolbertonCourse {
     this._length = length;
     this._students = students;
   }
+
+  get _name() {
+    return this._name;
+  }
+  set _name(name) {
+    this._name = name;
+  }
+  get _length() {
+    return this._length;
+  }
+  set _length(length) {
+    this._length = length;
+  }
+  get _students() {
+    return this._students;
+  }
+  set _student(student) {
+    this._student = student;
+  }
 }
