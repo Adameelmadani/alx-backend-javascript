@@ -8,8 +8,7 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
       for (const a of results) {
         if (a.status === 'fulfilled') {
           array.push({ status: a.status, value: a.value });
-        }
-        else {
+        } else {
           array.push({ status: a.status, value: `${a.reason}` });
         }
       }
