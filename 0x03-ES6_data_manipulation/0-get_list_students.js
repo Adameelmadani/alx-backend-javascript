@@ -1,5 +1,5 @@
 export default function getListStudents() {
-  const list_obj = [
+  return [
   {
     id: 1,
     firstName: 'Guillaume',
@@ -15,5 +15,4 @@ export default function getListStudents() {
    location: 'San Francisco'
   }
 ]
-  return list_obj;
 }
