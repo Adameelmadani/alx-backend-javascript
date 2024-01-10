@@ -7,7 +7,7 @@ export default function updateStudentGradeByCity(slist, city, newGrades) {
         a = 1;
       }
     }
-    if (a == 0) {
+    if (a === 0) {
       student.grade = 'N/A';
     }
     return student;
