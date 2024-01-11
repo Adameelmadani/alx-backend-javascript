@@ -1,7 +1,7 @@
-export default function cleanSet(set, sSt='') {
-  if (typeof sSt !== 'string') {
-    return '';
-  }
-  return [...set].filter((elem) => elem.startsWith(sSt) && sSt !== '')
-    .map((elem) => elem.replace(sSt, '')).join('-');
+export default function cleanSet(set, startString) {
+  if (!startString || !set || !(set instanceof Set) || typeof startString !== 'string') return '';
+  return Array.from(set)
+    .filter((val) => val && val.startsWith(startString))
+    .map((val) => val.replace(startString, ''))
+    .join('-');
 }
